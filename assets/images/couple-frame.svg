@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <defs>
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A0E17" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1A0005" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE57F"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#8D6E14"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background decorative arch -->
+  <circle cx="200" cy="160" r="140" fill="url(#sunGlow)"/>
+  <path d="M70 280 C70 140 130 50 200 50 C270 50 330 140 330 280" stroke="url(#goldStroke)" stroke-width="2" fill="none"/>
+  <path d="M80 280 C80 150 135 65 200 65 C265 65 320 150 320 280" stroke="url(#goldStroke)" stroke-width="1" stroke-dasharray="4 4" fill="none"/>
+  
+  <!-- Auspicious Kalash above arch -->
+  <circle cx="200" cy="46" r="5" fill="url(#goldStroke)"/>
+
+  <!-- Groom Silhouette & Traditional Daura Suruwal / Topi Profile (Sulav) -->
+  <g transform="translate(100, 70)">
+    <!-- Dhaka Topi / Royal Wedding Topi with Kalgi plume -->
+    <path d="M55 45 L78 30 L85 45 L55 52 Z" fill="#8D6E14"/>
+    <path d="M58 43 L76 32 L83 44 L58 49 Z" fill="#D32F2F"/>
+    <!-- Topi Kalgi feather/brooch -->
+    <path d="M78 30 Q83 15 88 12 Q83 25 80 32" stroke="url(#goldStroke)" stroke-width="2" fill="url(#goldStroke)"/>
+    <!-- Head & Face Profile -->
+    <path d="M60 52 C55 58 55 68 58 75 C60 80 66 84 72 84 C76 84 80 82 82 78 C84 70 82 60 78 54 Z" fill="#D4AF37"/>
+    <!-- Groom Daura & Coat / Traditional Dress -->
+    <path d="M50 84 C40 92 30 115 28 150 L85 150 L85 92 C78 86 70 82 50 84 Z" fill="#3E2723"/>
+    <!-- Royal Mala (Dubo ko mala / Marigold Garland) -->
+    <path d="M62 86 Q68 115 82 135" stroke="#4CAF50" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M62 86 Q68 115 82 135" stroke="#FFC107" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 3" fill="none"/>
+  </g>
+
+  <!-- Bride Silhouette & Traditional Sari / Pote / Maang Tikka Profile (Mannu) -->
+  <g transform="translate(180, 75)">
+    <!-- Bridal Ghunghat (Veil) & Hair Bun -->
+    <path d="M42 42 C48 30 68 32 78 45 C86 55 88 78 86 110 C82 125 78 145 74 150 L35 150 C38 135 34 110 32 90 C30 75 34 50 42 42 Z" fill="#B71C1C"/>
+    <path d="M42 42 C50 32 68 34 76 46" stroke="url(#goldStroke)" stroke-width="2.5" fill="none"/>
+    <!-- Golden embroidery border on Ghunghat -->
+    <path d="M42 44 C40 60 36 85 34 115 C33 135 35 145 35 150" stroke="url(#goldStroke)" stroke-width="2" stroke-dasharray="3 2" fill="none"/>
+    <!-- Face profile -->
+    <path d="M46 54 C50 56 55 60 55 67 C55 74 50 78 45 82 Z" fill="#D4AF37"/>
+    <!-- Maang Tikka -->
+    <circle cx="52" cy="52" r="2.5" fill="#FFE082"/>
+    <line x1="52" y1="46" x2="52" y2="52" stroke="#FFE082" stroke-width="1"/>
+    <!-- Tilhari / Pote necklace -->
+    <path d="M40 86 Q48 102 54 118" stroke="#D32F2F" stroke-width="3" fill="none"/>
+    <circle cx="52" cy="112" r="3" fill="#FFD700"/>
+    <!-- Bridal Garland (Dubo & Red Rose) -->
+    <path d="M38 88 Q44 110 50 135" stroke="#2E7D32" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M38 88 Q44 110 50 135" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 3" fill="none"/>
+  </g>
+
+  <!-- Sacred Hand-fasting / Varmala joining hearts -->
+  <path d="M190 205 Q200 195 210 205 Q200 220 190 205 Z" fill="#E53935"/>
+  <circle cx="200" cy="208" r="1.5" fill="#FFE082"/>
+
+  <!-- Floral Garland border bottom -->
+  <path d="M60 270 Q130 255 200 270 Q270 255 340 270" stroke="url(#goldStroke)" stroke-width="3" fill="none"/>
+  <circle cx="100" cy="265" r="4" fill="#E53935"/>
+  <circle cx="150" cy="262" r="4" fill="#FFB300"/>
+  <circle cx="200" cy="268" r="5" fill="#E53935"/>
+  <circle cx="250" cy="262" r="4" fill="#FFB300"/>
+  <circle cx="300" cy="265" r="4" fill="#E53935"/>
+
+  <!-- Golden sparkles -->
+  <circle cx="120" cy="110" r="1.5" fill="#FFE082"/>
+  <circle cx="280" cy="120" r="2" fill="#FFE082"/>
+  <circle cx="200" cy="90" r="1.5" fill="#FFE082"/>
+</svg>
+

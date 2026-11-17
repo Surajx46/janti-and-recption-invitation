@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="goldChandelier" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#FFD54F" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+  </defs>
+  <!-- Grand Chandelier / Palace Hall arch -->
+  <!-- Top mount chain -->
+  <line x1="50" y1="5" x2="50" y2="18" stroke="url(#goldChandelier)" stroke-width="2"/>
+  <circle cx="50" cy="18" r="3" fill="url(#goldChandelier)"/>
+  
+  <!-- Chandelier Tiers -->
+  <path d="M30 30 Q50 25 70 30" stroke="url(#goldChandelier)" stroke-width="2" fill="none"/>
+  <path d="M22 42 Q50 35 78 42" stroke="url(#goldChandelier)" stroke-width="2.5" fill="none"/>
+  <path d="M35 56 Q50 50 65 56" stroke="url(#goldChandelier)" stroke-width="2" fill="none"/>
+
+  <!-- Candle/Crystal lights -->
+  <circle cx="30" cy="27" r="2.5" fill="#FFF9C4"/>
+  <circle cx="50" cy="24" r="2.5" fill="#FFF9C4"/>
+  <circle cx="70" cy="27" r="2.5" fill="#FFF9C4"/>
+  <circle cx="22" cy="39" r="2.5" fill="#FFF9C4"/>
+  <circle cx="40" cy="36" r="2.5" fill="#FFF9C4"/>
+  <circle cx="60" cy="36" r="2.5" fill="#FFF9C4"/>
+  <circle cx="78" cy="39" r="2.5" fill="#FFF9C4"/>
+
+  <!-- Hanging Crystal Prisms -->
+  <polygon points="50,68 47,75 50,82 53,75" fill="url(#goldChandelier)"/>
+  <polygon points="38,58 35,65 38,72 41,65" fill="url(#goldChandelier)"/>
+  <polygon points="62,58 59,65 62,72 65,65" fill="url(#goldChandelier)"/>
+  <polygon points="26,45 24,51 26,56 28,51" fill="url(#goldChandelier)"/>
+  <polygon points="74,45 72,51 74,56 76,51" fill="url(#goldChandelier)"/>
+
+  <!-- Sparkle stars -->
+  <path d="M15 25 L16 29 L20 30 L16 31 L15 35 L14 31 L10 30 L14 29 Z" fill="#FFE57F"/>
+  <path d="M85 30 L86 34 L90 35 L86 36 L85 40 L84 36 L80 35 L84 34 Z" fill="#FFE57F"/>
+  <path d="M50 88 L51 91 L54 92 L51 93 L50 96 L49 93 L46 92 L49 91 Z" fill="#FFE57F"/>
+</svg>
+

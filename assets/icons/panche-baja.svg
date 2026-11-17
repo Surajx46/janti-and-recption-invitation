@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="goldBaja" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#FFB300" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+  </defs>
+  <!-- Sanai (Shehnai) flute -->
+  <g transform="rotate(-30 45 45)">
+    <path d="M48 10 L52 10 L55 65 L62 78 L38 78 L45 65 Z" fill="url(#goldBaja)" stroke="#B78103" stroke-width="1"/>
+    <circle cx="50" cy="8" r="2.5" fill="#FFE082"/>
+    <ellipse cx="50" cy="78" rx="12" ry="3.5" fill="#B78103"/>
+    <!-- Flute holes -->
+    <circle cx="50" cy="30" r="1.5" fill="#3E2723"/>
+    <circle cx="50" cy="38" r="1.5" fill="#3E2723"/>
+    <circle cx="50" cy="46" r="1.5" fill="#3E2723"/>
+    <circle cx="50" cy="54" r="1.5" fill="#3E2723"/>
+  </g>
+  <!-- Dholak / Damaha Drum -->
+  <g transform="translate(15, 30)">
+    <ellipse cx="55" cy="42" rx="14" ry="24" fill="url(#goldBaja)" stroke="#B78103" stroke-width="2"/>
+    <ellipse cx="55" cy="42" rx="10" ry="18" fill="#5D4037" opacity="0.4"/>
+    <path d="M55 18 C35 22 25 28 25 42 C25 56 35 62 55 66" stroke="url(#goldBaja)" stroke-width="2.5" fill="none"/>
+    <!-- Drum lacings -->
+    <path d="M55 18 L25 42 L55 66 L25 42" stroke="url(#goldBaja)" stroke-width="1.2" opacity="0.8"/>
+    <!-- Drum stick -->
+    <line x1="20" y1="26" x2="38" y2="44" stroke="#FFE082" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="38" cy="44" r="3" fill="#D32F2F"/>
+  </g>
+  <!-- Musical notes floating -->
+  <path d="M78 16 L88 12 L88 24 M88 16 L78 20" stroke="url(#goldBaja)" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="78" cy="24" r="2" fill="url(#goldBaja)"/>
+  <circle cx="88" cy="20" r="2" fill="url(#goldBaja)"/>
+</svg>
+

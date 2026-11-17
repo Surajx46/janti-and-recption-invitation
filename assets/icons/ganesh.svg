@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="goldGanesh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#FFB300" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+  </defs>
+  <!-- Ganesha minimalist auspicious outline -->
+  <path d="M50 12 C44 12 38 16 38 23 C38 29 42 34 46 36 C42 39 34 44 34 54 C34 68 44 76 50 78 C56 76 66 68 66 54 C66 44 58 39 54 36 C58 34 62 29 62 23 C62 16 56 12 50 12 Z" stroke="url(#goldGanesh)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Crown / Mukut -->
+  <path d="M44 14 L50 6 L56 14 Z" fill="url(#goldGanesh)" opacity="0.8"/>
+  <circle cx="50" cy="5" r="2" fill="url(#goldGanesh)"/>
+  <!-- Tilak / Trishul mark -->
+  <path d="M47 20 Q50 24 53 20" stroke="url(#goldGanesh)" stroke-width="1.8" fill="none"/>
+  <line x1="50" y1="17" x2="50" y2="24" stroke="url(#goldGanesh)" stroke-width="2"/>
+  <circle cx="50" cy="27" r="1.5" fill="#E53935"/>
+  <!-- Trunk curve (Modak hand gesture) -->
+  <path d="M50 36 Q49 52 57 55 Q63 57 63 64 Q63 71 55 72" stroke="url(#goldGanesh)" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+  <!-- Ears -->
+  <path d="M38 25 C28 27 24 35 27 46 C29 52 34 54 38 52" stroke="url(#goldGanesh)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M62 25 C72 27 76 35 73 46 C71 52 66 54 62 52" stroke="url(#goldGanesh)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Modak in trunk -->
+  <circle cx="55" cy="73" r="3" fill="url(#goldGanesh)"/>
+  <!-- Om symbol halo background subtle -->
+  <circle cx="50" cy="46" r="42" stroke="url(#goldGanesh)" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+</svg>
+
