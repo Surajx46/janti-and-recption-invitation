@@ -305,7 +305,7 @@ body {
 }
 
 .seal-monogram {
-  font-family: var(--font-display);
+  font-family: 'Cinzel', serif;
   font-weight: 700;
   font-size: 1.45rem;
   color: #fffaf0;
@@ -1012,7 +1012,7 @@ body {
 }
 
 .crest-initials {
-  font-family: var(--font-display);
+  font-family: 'Cinzel', serif;
   font-size: 0.95rem;
   font-weight: 700;
   color: #fffaf0;
