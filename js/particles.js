@@ -9,17 +9,17 @@ class PetalParticleEngine {
     if (!this.canvas) return;
     this.ctx = this.canvas.getContext('2d');
     this.petals = [];
-    this.maxPetals = 45;
+    this.maxPetals = 34;
     this.isActive = true;
     this.animFrameId = null;
 
-    // Petal color palettes (Sayapatri orange/yellow, Gulab deep crimson & gold sparkles)
+    // Bright floral petal palettes (Blush Rose, Marigold Gold, Peach Blossom, Festive Crimson)
     this.colors = [
-      { fill: '#FF9800', stroke: '#E65100', type: 'sayapatri' },
+      { fill: '#F48FB1', stroke: '#EC407A', type: 'blush' },
+      { fill: '#FFAB91', stroke: '#FF7043', type: 'peach' },
       { fill: '#FFB300', stroke: '#F57F17', type: 'sayapatri' },
       { fill: '#E53935', stroke: '#B71C1C', type: 'rose' },
-      { fill: '#D32F2F', stroke: '#880E4F', type: 'rose' },
-      { fill: '#FFE082', stroke: '#FFA000', type: 'gold' }
+      { fill: '#F9D976', stroke: '#D4A244', type: 'gold' }
     ];
 
     this.init();

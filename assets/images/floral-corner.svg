@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" fill="none">
+  <defs>
+    <radialGradient id="roseGrad" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#F48FB1"/>
+      <stop offset="65%" stop-color="#D81B60"/>
+      <stop offset="100%" stop-color="#AD1457"/>
+    </radialGradient>
+    <radialGradient id="marigoldCorner" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="65%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Leaves -->
+  <path d="M18 18 Q56 10 86 24 Q52 40 18 18 Z" fill="#43A047" opacity="0.55"/>
+  <path d="M18 18 Q10 56 24 86 Q40 52 18 18 Z" fill="#2E7D32" opacity="0.55"/>
+  <path d="M24 24 Q64 42 74 74 Q42 64 24 24 Z" fill="#66BB6A" opacity="0.45"/>
+
+  <!-- Delicate Gold Tendrils -->
+  <path d="M10 10 Q75 18 122 10" stroke="#C4963F" stroke-width="1.2" opacity="0.6"/>
+  <path d="M10 10 Q18 75 10 122" stroke="#C4963F" stroke-width="1.2" opacity="0.6"/>
+
+  <!-- Main Marigold & Rose Blossoms -->
+  <circle cx="28" cy="28" r="16" fill="url(#marigoldCorner)" opacity="0.9"/>
+  <circle cx="28" cy="28" r="8" fill="#FFF3E0" opacity="0.35"/>
+
+  <circle cx="52" cy="22" r="11" fill="url(#roseGrad)" opacity="0.85"/>
+  <circle cx="22" cy="52" r="11" fill="url(#roseGrad)" opacity="0.85"/>
+
+  <!-- Small Gold Buds -->
+  <circle cx="72" cy="22" r="4.5" fill="#E6A940" opacity="0.8"/>
+  <circle cx="22" cy="72" r="4.5" fill="#E6A940" opacity="0.8"/>
+  <circle cx="48" cy="48" r="4" fill="#B82532" opacity="0.75"/>
+</svg>

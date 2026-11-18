@@ -18,10 +18,130 @@ document.addEventListener('DOMContentLoaded', () => {
   initShareFeatures();
   initQRCode();
   initNavControls();
+  initFooterReveal();
 
   // Load Initial Wishes
   loadWishesWall();
 });
+
+/* ==========================================================================
+   Scroll-Triggered Slow Water-Wave Reveal & Welcome Pop-up (Once Per Open)
+   ========================================================================== */
+function initFooterReveal() {
+  const footer = document.getElementById('blessing-footer');
+  if (!footer) return;
+
+  const envelopeScreen = document.getElementById('envelope-screen');
+  const welcomeModal = document.getElementById('welcome-popup-modal');
+  const btnClose = document.getElementById('welcome-popup-close');
+  const btnOk = document.getElementById('welcome-popup-ok');
+
+  let revealed = false;
+  let scheduled = false;
+  let popupShown = false;
+  let popupTimer = null;
+
+  const showWelcomePopup = () => {
+    if (popupShown || !welcomeModal) return;
+    popupShown = true;
+    welcomeModal.classList.add('active');
+    welcomeModal.setAttribute('aria-hidden', 'false');
+    if (typeof triggerCelebrationConfetti === 'function') {
+      triggerCelebrationConfetti();
+    }
+  };
+
+  const closeWelcomePopup = () => {
+    if (!welcomeModal) return;
+    welcomeModal.classList.remove('active');
+    welcomeModal.setAttribute('aria-hidden', 'true');
+  };
+
+  if (btnClose) btnClose.addEventListener('click', closeWelcomePopup);
+  if (btnOk) btnOk.addEventListener('click', closeWelcomePopup);
+  if (welcomeModal) {
+    welcomeModal.addEventListener('click', (e) => {
+      if (e.target === welcomeModal) closeWelcomePopup();
+    });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeWelcomePopup();
+  });
+
+  const openFooterWave = () => {
+    if (revealed) return;
+    revealed = true;
+    footer.classList.add('revealed');
+
+    // Display the welcome pop-up right after the slow water-wave animation completes
+    popupTimer = setTimeout(() => {
+      showWelcomePopup();
+    }, 4200);
+  };
+
+  const scheduleReveal = () => {
+    if (revealed || scheduled) return;
+    scheduled = true;
+    setTimeout(openFooterWave, 650);
+  };
+
+  // Allow clicking directly on the wave cover to open
+  const overlay = footer.querySelector('.footer-wave-overlay');
+  if (overlay) {
+    overlay.addEventListener('click', openFooterWave);
+  }
+
+  const tryRevealIfVisible = () => {
+    if (revealed || scheduled) return;
+    const isEnvelopeOpen = !envelopeScreen || envelopeScreen.classList.contains('opened');
+    if (!isEnvelopeOpen) return;
+
+    const rect = footer.getBoundingClientRect();
+    const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+    if (visibleHeight >= Math.min(rect.height * 0.48, 125)) {
+      scheduleReveal();
+    }
+  };
+
+  let observer = null;
+  const startObserving = () => {
+    if (!('IntersectionObserver' in window)) return;
+    if (observer) observer.disconnect();
+
+    observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting || revealed || scheduled) return;
+        const isEnvelopeOpen = !envelopeScreen || envelopeScreen.classList.contains('opened');
+        if (!isEnvelopeOpen) return;
+
+        scheduleReveal();
+        observer.unobserve(footer);
+      });
+    }, {
+      threshold: 0.48
+    });
+
+    observer.observe(footer);
+  };
+
+  startObserving();
+
+  // Companion scroll listener guarantees trigger across all screen heights
+  window.addEventListener('scroll', tryRevealIfVisible, { passive: true });
+
+  // Reset cleanly if the page is reopened from browser cache (bfcache)
+  window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+      revealed = false;
+      scheduled = false;
+      popupShown = false;
+      if (popupTimer) clearTimeout(popupTimer);
+      footer.classList.remove('revealed');
+      closeWelcomePopup();
+      startObserving();
+    }
+  });
+}
 
 /* ==========================================================================
    Envelope Unveiling Sequence
@@ -33,12 +153,10 @@ function initEnvelopeOpener() {
   if (!waxSeal || !envelopeScreen) return;
 
   waxSeal.addEventListener('click', () => {
-    // Play royal bell chime & start music
+    // Start YouTube Panchebaja song immediately within user gesture (mobile-safe)
     if (window.weddingAudio) {
       window.weddingAudio.playSealChime();
-      setTimeout(() => {
-        window.weddingAudio.startMusic();
-      }, 400);
+      window.weddingAudio.startMusic();
     }
 
     // Trigger celebration confetti

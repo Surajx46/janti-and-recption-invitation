@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 110" fill="none" preserveAspectRatio="xMidYMin slice">
+  <defs>
+    <linearGradient id="goldString" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C4963F"/>
+      <stop offset="50%" stop-color="#E6C378"/>
+      <stop offset="100%" stop-color="#C4963F"/>
+    </linearGradient>
+    <radialGradient id="marigold" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="60%" stop-color="#FFA000"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </radialGradient>
+    <radialGradient id="crimsonFlower" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#EF5350"/>
+      <stop offset="60%" stop-color="#C62828"/>
+      <stop offset="100%" stop-color="#8E1722"/>
+    </radialGradient>
+    <linearGradient id="mangoLeaf" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#43A047"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Scalloped Golden Festoon Curves -->
+  <path d="M0 12 Q100 68 200 18 Q300 68 400 18 Q500 68 600 18 Q700 68 800 12" stroke="url(#goldString)" stroke-width="2.5" fill="none"/>
+  <path d="M0 6 Q100 54 200 10 Q300 54 400 10 Q500 54 600 10 Q700 54 800 6" stroke="url(#goldString)" stroke-width="1" stroke-dasharray="3 4" fill="none" opacity="0.7"/>
+
+  <!-- Mango Leaves (Aap ko paat) along the arches -->
+  <g fill="url(#mangoLeaf)" opacity="0.88">
+    <path d="M50 32 Q42 52 50 66 Q58 52 50 32 Z"/>
+    <path d="M100 44 Q92 66 100 82 Q108 66 100 44 Z"/>
+    <path d="M150 32 Q142 52 150 66 Q158 52 150 32 Z"/>
+    <path d="M250 32 Q242 52 250 66 Q258 52 250 32 Z"/>
+    <path d="M300 44 Q292 66 300 82 Q308 66 300 44 Z"/>
+    <path d="M350 32 Q342 52 350 66 Q358 52 350 32 Z"/>
+    <path d="M450 32 Q442 52 450 66 Q458 52 450 32 Z"/>
+    <path d="M500 44 Q492 66 500 82 Q508 66 500 44 Z"/>
+    <path d="M550 32 Q542 52 550 66 Q558 52 550 32 Z"/>
+    <path d="M650 32 Q642 52 650 66 Q658 52 650 32 Z"/>
+    <path d="M700 44 Q692 66 700 82 Q708 66 700 44 Z"/>
+    <path d="M750 32 Q742 52 750 66 Q758 52 750 32 Z"/>
+  </g>
+
+  <!-- Sayapatri (Marigold) & Red Rose Blossoms -->
+  <g>
+    <!-- Arch 1 -->
+    <circle cx="25" cy="22" r="9" fill="url(#marigold)"/>
+    <circle cx="50" cy="34" r="10" fill="url(#crimsonFlower)"/>
+    <circle cx="75" cy="42" r="9.5" fill="url(#marigold)"/>
+    <circle cx="100" cy="46" r="11" fill="url(#crimsonFlower)"/>
+    <circle cx="125" cy="42" r="9.5" fill="url(#marigold)"/>
+    <circle cx="150" cy="34" r="10" fill="url(#crimsonFlower)"/>
+    <circle cx="175" cy="24" r="9" fill="url(#marigold)"/>
+
+    <!-- Peak 1 -->
+    <circle cx="200" cy="18" r="11" fill="url(#crimsonFlower)"/>
+    <line x1="200" y1="29" x2="200" y2="56" stroke="#C4963F" stroke-width="1.5"/>
+    <circle cx="200" cy="58" r="4" fill="#E6A940"/>
+
+    <!-- Arch 2 -->
+    <circle cx="225" cy="24" r="9" fill="url(#marigold)"/>
+    <circle cx="250" cy="34" r="10" fill="url(#crimsonFlower)"/>
+    <circle cx="275" cy="42" r="9.5" fill="url(#marigold)"/>
+    <circle cx="300" cy="46" r="11" fill="url(#crimsonFlower)"/>
+    <circle cx="325" cy="42" r="9.5" fill="url(#marigold)"/>
+    <circle cx="350" cy="34" r="10" fill="url(#crimsonFlower)"/>
+    <circle cx="375" cy="24" r="9" fill="url(#marigold)"/>
+
+    <!-- Center Peak -->
+    <circle cx="400" cy="18" r="12" fill="url(#crimsonFlower)"/>
+    <circle cx="400" cy="18" r="5" fill="#FFD54F"/>
+    <line x1="400" y1="30" x2="400" y2="66" stroke="#C4963F" stroke-width="1.8"/>
+    <circle cx="400" cy="68" r="5" fill="#E6A940"/>
+    <path d="M394 74 L400 84 L406 74 Z" fill="#C62828"/>
+
+    <!-- Arch 3 -->
+    <circle cx="425" cy="24" r="9" fill="url(#marigold)"/>
+    <circle cx="450" cy="34" r="10" fill="url(#crimsonFlower)"/>
+    <circle cx="475" cy="42" r="9.5" fill="url(#marigold)"/>
+    <circle cx="500" cy="46" r="11" fill="url(#crimsonFlower)"/>
+    <circle cx="525" cy="42" r="9.5" fill="url(#marigold)"/>
+    <circle cx="550" cy="34" r="10" fill="url(#crimsonFlower)"/>
+    <circle cx="575" cy="24" r="9" fill="url(#marigold)"/>
+
+    <!-- Peak 3 -->
+    <circle cx="600" cy="18" r="11" fill="url(#crimsonFlower)"/>
+    <line x1="600" y1="29" x2="600" y2="56" stroke="#C4963F" stroke-width="1.5"/>
+    <circle cx="600" cy="58" r="4" fill="#E6A940"/>
+
+    <!-- Arch 4 -->
+    <circle cx="625" cy="24" r="9" fill="url(#marigold)"/>
+    <circle cx="650" cy="34" r="10" fill="url(#crimsonFlower)"/>
+    <circle cx="675" cy="42" r="9.5" fill="url(#marigold)"/>
+    <circle cx="700" cy="46" r="11" fill="url(#crimsonFlower)"/>
+    <circle cx="725" cy="42" r="9.5" fill="url(#marigold)"/>
+    <circle cx="750" cy="34" r="10" fill="url(#crimsonFlower)"/>
+    <circle cx="775" cy="22" r="9" fill="url(#marigold)"/>
+  </g>
+</svg>
