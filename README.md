@@ -8,7 +8,7 @@ A bespoke, royal digital wedding invitation website crafted for **Sulav Rana (Gr
 
 ### 🥁 1. Shubha Janti (The Royal Wedding Procession - Boys' Side)
 - **First Party**: From the Groom's Side (केटा पक्षबाट)
-- **Date**: Mangshir 17 (Wednesday, December 3) / मंसिर १७ गते
+- **Date**: Mangshir 17 (Thursday, December 3) / मंसिर १७ गते
 - **Timings**:
   - **Gathering Starts**: 7:00 AM at Groom's Residence, Hattiban
   - **Janti Departure**: 8:00 AM Morning
@@ -19,7 +19,7 @@ A bespoke, royal digital wedding invitation website crafted for **Sulav Rana (Gr
 - **Direct Navigation**: 1-click Google Maps directions to both Hattiban and The Smart Palace.
 
 ### 🥂 2. Shubha Vivaha Preetibhoj (Grand Wedding Reception)
-- **Date**: Mangshir 19 (मंसिर १९ गते / Friday, Dec 5)
+- **Date**: Mangshir 19 (मंसिर १९ गते / Saturday, Dec 5)
 - **Time**: From 4:00 PM onwards in the evening
 - **Venue**: Crystal Banquet, Manbhawan, Patan, Lalitpur (Near Jawalakhel)
 - **Highlights**: Live felicitation, photography, acoustic wedding music, and gourmet dining.
