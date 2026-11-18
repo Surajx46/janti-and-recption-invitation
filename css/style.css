@@ -31,12 +31,12 @@
   --shadow-tile: 0 4px 14px rgba(120, 80, 38, 0.07);
   --shadow-btn: 0 8px 20px rgba(158, 24, 36, 0.25);
 
-  /* Authentic Wedding Editorial Font Pairing */
-  --font-display: 'Cinzel', 'Playfair Display', serif;
-  --font-editorial: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
-  --font-body: 'Lora', 'Mukta', Georgia, serif;
-  --font-script: 'Great Vibes', cursive;
-  --font-nepali: 'Rozha One', 'Mukta', serif;
+  /* Royal Nepali Devanagari Typography Pairing */
+  --font-display: 'Rozha One', 'Noto Serif Devanagari', serif;
+  --font-editorial: 'Noto Serif Devanagari', 'Mukta', serif;
+  --font-body: 'Mukta', 'Noto Serif Devanagari', sans-serif;
+  --font-script: 'Rozha One', 'Noto Serif Devanagari', serif;
+  --font-nepali: 'Rozha One', 'Noto Serif Devanagari', serif;
 
   --radius-xl: 28px;
   --radius-lg: 20px;
@@ -324,20 +324,19 @@ body {
 }
 
 .envelope-prompt-text {
-  font-family: var(--font-display);
-  font-size: 0.92rem;
+  font-family: var(--font-editorial);
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  letter-spacing: 0.3px;
   color: var(--accent-crimson);
   margin-bottom: 2px;
 }
 
 .envelope-prompt-sub {
-  font-family: var(--font-script);
-  font-size: 2.1rem;
+  font-family: var(--font-display);
+  font-size: 1.65rem;
   color: var(--accent-gold-dark);
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 /* ==========================================================================
@@ -402,40 +401,46 @@ body {
 }
 
 .ganesh-wrap {
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 8px;
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 10px;
+}
+
+.ganesh-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 5px rgba(164, 114, 28, 0.24));
 }
 
 .shree-ganesh-text {
   font-family: var(--font-nepali);
-  font-size: 1.08rem;
-  font-weight: 600;
+  font-size: 1.15rem;
+  font-weight: 400;
   color: var(--accent-gold-dark);
-  letter-spacing: 1.5px;
-  margin-bottom: 6px;
+  letter-spacing: 0.4px;
+  margin-bottom: 4px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .invite-kicker {
   font-family: var(--font-display);
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 4.5px;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
   color: var(--ink-muted);
   margin-bottom: 12px;
 }
 
 .invite-note {
   font-family: var(--font-editorial);
-  font-size: 1.2rem;
-  font-style: italic;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--ink-secondary);
-  max-width: 440px;
-  margin: 0 auto 24px;
-  line-height: 1.48;
+  max-width: 460px;
+  margin: 0 auto 22px;
+  line-height: 1.65;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85);
 }
 
@@ -444,7 +449,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .person-block {
@@ -455,28 +460,27 @@ body {
 
 .couple-name {
   font-family: var(--font-display);
-  font-size: 2.65rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 1.15;
+  font-size: 2.85rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
 }
 
 .person-role {
   font-family: var(--font-body);
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
+  letter-spacing: 0.4px;
   color: var(--accent-gold-dark);
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .couple-ampersand {
-  font-family: var(--font-script);
-  font-size: 3.1rem;
+  font-family: var(--font-display);
+  font-size: 1.65rem;
   color: var(--accent-gold);
-  line-height: 0.88;
-  margin: 8px 0 4px;
+  line-height: 1;
+  margin: 6px 0;
 }
 
 .date-ribbon-pill {
@@ -486,18 +490,18 @@ body {
   background: var(--bg-blush);
   border: 1.2px solid rgba(158, 24, 36, 0.32);
   color: var(--accent-crimson-dark);
-  font-family: var(--font-display);
-  font-size: 0.88rem;
+  font-family: var(--font-editorial);
+  font-size: 0.95rem;
   font-weight: 700;
-  letter-spacing: 1.4px;
+  letter-spacing: 0.3px;
   padding: 9px 24px;
   border-radius: var(--radius-pill);
-  margin: 6px 0 24px;
+  margin: 6px 0 22px;
   box-shadow: 0 4px 14px rgba(158, 24, 36, 0.08);
 }
 
 .couple-art-frame {
-  max-width: 270px;
+  max-width: 265px;
   margin: 0 auto;
 }
 
@@ -505,6 +509,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
+  mix-blend-mode: multiply;
 }
 
 /* ==========================================================================
@@ -618,12 +623,11 @@ body {
 .event-badge {
   display: inline-flex;
   align-items: center;
-  font-family: var(--font-display);
-  font-size: 0.72rem;
+  font-family: var(--font-editorial);
+  font-size: 0.86rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 7px 18px;
+  letter-spacing: 0.3px;
+  padding: 6px 18px;
   border-radius: var(--radius-pill);
   box-shadow: var(--shadow-tile);
 }
@@ -668,18 +672,17 @@ body {
 
 .event-title {
   font-family: var(--font-display);
-  font-size: 1.85rem;
-  font-weight: 700;
+  font-size: 2.05rem;
+  font-weight: 400;
   color: var(--accent-crimson-dark);
-  letter-spacing: 1px;
+  letter-spacing: 0.3px;
   line-height: 1.2;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .event-short-note {
   font-family: var(--font-editorial);
-  font-size: 1.15rem;
-  font-style: italic;
+  font-size: 1.02rem;
   font-weight: 600;
   color: var(--ink-secondary);
   max-width: 440px;
@@ -730,14 +733,13 @@ body {
 }
 
 .info-label {
-  font-family: var(--font-display);
-  font-size: 0.7rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.8px;
+  letter-spacing: 0.2px;
   color: var(--accent-gold-dark);
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 .info-value {
@@ -802,11 +804,10 @@ body {
 }
 
 .venue-point-label {
-  font-family: var(--font-display);
-  font-size: 0.7rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.8px;
+  letter-spacing: 0.2px;
   color: var(--accent-gold-dark);
   display: block;
 }
@@ -1067,32 +1068,30 @@ body {
 
 .footer-note {
   font-family: var(--font-editorial);
-  font-size: 1.18rem;
-  font-style: italic;
+  font-size: 1.04rem;
   font-weight: 600;
   color: var(--ink-secondary);
-  max-width: 420px;
+  max-width: 440px;
   margin: 0 auto 14px;
-  line-height: 1.48;
+  line-height: 1.62;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85);
 }
 
 .footer-families {
   font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
   color: var(--accent-crimson-dark);
 }
 
 .footer-dates {
   font-family: var(--font-body);
-  font-size: 0.84rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: var(--accent-gold-dark);
-  margin-top: 6px;
-  letter-spacing: 1.4px;
+  margin-top: 4px;
+  letter-spacing: 0.3px;
 }
 
 /* ==========================================================================
@@ -1178,22 +1177,21 @@ body {
 
 .welcome-modal-title {
   font-family: var(--font-display);
-  font-size: 1.48rem;
-  font-weight: 700;
+  font-size: 1.55rem;
+  font-weight: 400;
   color: var(--accent-crimson-dark);
-  letter-spacing: 0.8px;
-  line-height: 1.28;
+  letter-spacing: 0.3px;
+  line-height: 1.32;
   margin-bottom: 12px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .welcome-modal-msg {
   font-family: var(--font-editorial);
-  font-size: 1.18rem;
-  font-style: italic;
+  font-size: 1.04rem;
   font-weight: 600;
   color: var(--ink-secondary);
-  line-height: 1.55;
+  line-height: 1.65;
   margin: 0 auto 18px;
 }
 

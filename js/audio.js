@@ -160,11 +160,11 @@ class RoyalWeddingAudio {
     if (playing) {
       musicBtn.classList.add('playing');
       const textElem = musicBtn.querySelector('.music-btn-text');
-      if (textElem) textElem.textContent = translations[window.currentLang || 'en'].musicPlay;
+      if (textElem) textElem.textContent = translations.np.musicPlay;
     } else {
       musicBtn.classList.remove('playing');
       const textElem = musicBtn.querySelector('.music-btn-text');
-      if (textElem) textElem.textContent = translations[window.currentLang || 'en'].musicMute;
+      if (textElem) textElem.textContent = translations.np.musicMute;
     }
   }
 }

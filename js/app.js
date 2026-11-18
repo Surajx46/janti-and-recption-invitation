@@ -3,7 +3,12 @@
  * Core Application Controller
  */
 
-window.currentLang = 'en';
+window.currentLang = 'np';
+
+function toNepaliDigits(num) {
+  const nepaliNums = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  return String(num).padStart(2, '0').replace(/\d/g, d => nepaliNums[d]);
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize Petal Particle Engine
@@ -231,10 +236,10 @@ function initCountdown() {
     const mElem = document.getElementById('count-mins');
     const sElem = document.getElementById('count-secs');
 
-    if (dElem) dElem.textContent = String(days).padStart(2, '0');
-    if (hElem) hElem.textContent = String(hours).padStart(2, '0');
-    if (mElem) mElem.textContent = String(minutes).padStart(2, '0');
-    if (sElem) sElem.textContent = String(seconds).padStart(2, '0');
+    if (dElem) dElem.textContent = toNepaliDigits(days);
+    if (hElem) hElem.textContent = toNepaliDigits(hours);
+    if (mElem) mElem.textContent = toNepaliDigits(minutes);
+    if (sElem) sElem.textContent = toNepaliDigits(seconds);
   }
 
   updateTimer();
@@ -330,12 +335,12 @@ function initCalendarButtons() {
   if (jantiCalBtn) {
     jantiCalBtn.addEventListener('click', () => {
       downloadICSFile({
-        title: "Sulav & Mannu's Shubha Janti & Vivaha (Mangshir 17 / Dec 3)",
-        description: "The Royal Janti begins from Groom's residence at Hattiban, Lalitpur (Gathering 7:00 AM, Departure 8:00 AM) to The Smart Palace for the sacred wedding rituals of Sulav Rana and Mannu Shrestha.",
-        location: "Hattiban, Lalitpur to The Smart Palace, Lalitpur",
+        title: "सुलाव राना र मन्नु श्रेष्ठ — शुभ जन्ती (मंसिर १७ / डिसेम्बर ३)",
+        description: "वर निवास हत्तिवन, ललितपुर (भेला बिहान ७:०० बजे, प्रस्थान बिहान ८:०० बजे) बाट द स्मार्ट प्यालेससम्म शुभ जन्ती तथा विवाह समारोह।",
+        location: "हत्तिवन, ललितपुर देखि द स्मार्ट प्यालेस",
         startDate: "20261203T080000",
         endDate: "20261203T160000"
-      }, "Sulav_Mannu_Janti_Invitation.ics");
+      }, "Sulav_Mannu_Janti.ics");
     });
   }
 
@@ -344,12 +349,12 @@ function initCalendarButtons() {
   if (receptionCalBtn) {
     receptionCalBtn.addEventListener('click', () => {
       downloadICSFile({
-        title: "Sulav & Mannu's Wedding Reception Preetibhoj (Mangshir 19 / Dec 5)",
-        description: "Grand Wedding Reception (Preetibhoj) celebrating the marriage of Sulav Rana and Mannu Shrestha at Crystal Banquet, Manbhawan, Patan.",
-        location: "Crystal Banquet, Manbhawan, Patan, Lalitpur, Nepal",
+        title: "सुलाव राना र मन्नु श्रेष्ठ — विवाह प्रीतिभोज (मंसिर १९ / डिसेम्बर ५)",
+        description: "क्रिस्टल ब्याङ्क्वेट, मानभवन, पाटन, ललितपुरमा बेलुकी ४:०० बजे देखि भव्य विवाह प्रीतिभोज।",
+        location: "क्रिस्टल ब्याङ्क्वेट, मानभवन, पाटन, ललितपुर",
         startDate: "20261205T160000",
         endDate: "20261205T213000"
-      }, "Sulav_Mannu_Reception_Invitation.ics");
+      }, "Sulav_Mannu_Reception.ics");
     });
   }
 }
